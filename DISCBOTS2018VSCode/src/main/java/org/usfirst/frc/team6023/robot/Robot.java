@@ -151,10 +151,10 @@ public class Robot extends IterativeRobot {
 		
 		//Winch Down
 		if(liftXbox.getBumper(GenericHID.Hand.kLeft) && !liftXbox.getBumper(GenericHID.Hand.kRight)){
-			lift.set(-0.3);
+			lift.set(-0.2);
 		} //Winch Up
 		else if(liftXbox.getBumper(GenericHID.Hand.kRight) && !liftXbox.getBumper(GenericHID.Hand.kLeft)){
-			lift.set(0.5);
+			lift.set(0.8);
 		} //Winch Stop
 		else{
 			lift.set(0);
